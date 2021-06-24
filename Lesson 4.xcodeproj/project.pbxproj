@@ -14,6 +14,7 @@
 		042D348026837F4C009693F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042D347F26837F4C009693F1 /* Assets.xcassets */; };
 		042D348326837F4C009693F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042D348126837F4C009693F1 /* LaunchScreen.storyboard */; };
 		042D348B2683A301009693F1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D348A2683A301009693F1 /* SecondViewController.swift */; };
+		0474CF1E26845D9C00DB677C /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474CF1D26845D9C00DB677C /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		042D348226837F4C009693F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		042D348426837F4C009693F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		042D348A2683A301009693F1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		0474CF1D26845D9C00DB677C /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,9 @@
 				042D347626837F4B009693F1 /* AppDelegate.swift */,
 				042D347826837F4B009693F1 /* SceneDelegate.swift */,
 				042D347A26837F4B009693F1 /* ViewController.swift */,
-				042D347C26837F4B009693F1 /* Main.storyboard */,
 				042D348A2683A301009693F1 /* SecondViewController.swift */,
+				0474CF1D26845D9C00DB677C /* ThirdViewController.swift */,
+				042D347C26837F4B009693F1 /* Main.storyboard */,
 				042D347F26837F4C009693F1 /* Assets.xcassets */,
 				042D348126837F4C009693F1 /* LaunchScreen.storyboard */,
 				042D348426837F4C009693F1 /* Info.plist */,
@@ -142,6 +145,7 @@
 			files = (
 				042D348B2683A301009693F1 /* SecondViewController.swift in Sources */,
 				042D347B26837F4B009693F1 /* ViewController.swift in Sources */,
+				0474CF1E26845D9C00DB677C /* ThirdViewController.swift in Sources */,
 				042D347726837F4B009693F1 /* AppDelegate.swift in Sources */,
 				042D347926837F4B009693F1 /* SceneDelegate.swift in Sources */,
 			);

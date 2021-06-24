@@ -98,7 +98,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Back" id="UFH-po-2Ho">
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="kVW-D4-DkT"/>
                         <connections>
                             <outlet property="titleView" destination="8bC-Xf-vdC" id="MIP-Zv-Rmb"/>
                         </connections>
@@ -202,7 +201,7 @@
                                 </state>
                                 <connections>
                                     <action selector="billAction:" destination="tMV-Lh-Wio" eventType="touchUpInside" id="4M0-DY-njo"/>
-                                    <segue destination="IEO-oM-pKz" kind="show" id="TbN-vq-EvD"/>
+                                    <segue destination="IEO-oM-pKz" kind="push" identifier="toCheck" id="YMG-Xo-COj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -211,7 +210,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Cafe Mario" id="Hxn-4O-W6a">
                         <barButtonItem key="backBarButtonItem" title="Back" id="VDj-md-PEV"/>
+                        <barButtonItem key="rightBarButtonItem" title="Сообщить о..." id="kVW-D4-DkT"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="fioTextField" destination="68V-wj-AJS" id="Hsu-s6-GvI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Y2-6B-hPE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="tMV-Lh-Wio" userLabel="Exit" sceneMemberID="exit"/>
@@ -221,7 +224,7 @@
         <!--Чек-->
         <scene sceneID="ogA-ja-YhL">
             <objects>
-                <viewController id="IEO-oM-pKz" sceneMemberID="viewController">
+                <viewController id="IEO-oM-pKz" customClass="ThirdViewController" customModule="Lesson_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qzd-0C-9lr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -351,15 +354,25 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="080-yC-SjU">
+                                <rect key="frame" x="158" y="92" width="98" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Q50-vQ-eGT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Чек" id="Qy7-hQ-pqb"/>
+                    <connections>
+                        <outlet property="FullNameLabel" destination="080-yC-SjU" id="CVX-Vy-ija"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fNC-9T-NIA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2882.608695652174" y="93.75"/>
+            <point key="canvasLocation" x="2935" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="b43-or-mqU">
@@ -377,11 +390,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cY4-cg-iMG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-325" y="94"/>
+            <point key="canvasLocation" x="-323" y="94"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Znq-2P-pd3"/>
+        <segue reference="0Vn-Rk-HfB"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="cloud.fill" catalog="system" width="128" height="84"/>
